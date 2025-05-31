@@ -41,7 +41,7 @@ def preprocess_input(input_dict):
     insurance_plan_encoding = {'Bronze': 1, 'Silver': 2, 'Gold': 3}
 
     df = pd.DataFrame(0, columns=expected_columns, index=[0])
-    # df.fillna(0, inplace=True)
+
 
     # Manually assign values for each categorical input based on input_dict
     for key, value in input_dict.items():
